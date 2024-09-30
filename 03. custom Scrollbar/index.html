@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Scrollbar</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+    body {
+      background: crimson;
+    }
+    .card {
+      background: #ccc;
+      width: 1000px;
+      padding: 20px;
+      margin: 20px;
+      line-height: 28px;
+    }
+    .card .card-title {
+      margin-bottom: 10px;
+    }
+
+    /* Scroll bar */
+    ::-webkit-scrollbar {
+      background-color: transparent;
+      width: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 100px;
+      background-color: #4158d0;
+      background-image: linear-gradient(
+        43deg,
+        #4158d0 0%,
+        #c850c0 46%,
+        #ffcc70 100%
+      );
+    }
+  </style>
+  <body>
+    <!-- section>(.card>h2.card-title+p)*8 -->
+    <section>
+      <div class="card">
+        <h2 class="card-title">Title 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error beatae
+          minima porro corporis nobis quasi delectus rerum, modi deserunt vel
+          magnam ducimus fuga debitis sit? A quaerat vero asperiores magni
+          aliquid, fugit amet maxime deserunt! Nam iusto, corrupti reiciendis
+          eos sequi eligendi excepturi dicta sunt fugit exercitationem totam quo
+          velit expedita dolore, minus iste suscipit accusantium neque
+          necessitatibus culpa corporis fugiat laudantium. Magni consequatur
+          asperiores consectetur expedita rerum assumenda doloribus? Placeat
+          deleniti nam harum dolor, quam delectus in vel dolorum? Atque
+          possimus, voluptates praesentium aut, nesciunt corrupti eaque placeat
+          cupiditate expedita magnam, neque ipsa vero voluptatem quia dolore
+          sapiente aliquam.
+        </p>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Title 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error beatae
+          minima porro corporis nobis quasi delectus rerum, modi deserunt vel
+          magnam ducimus fuga debitis sit? A quaerat vero asperiores magni
+          aliquid, fugit amet maxime deserunt! Nam iusto, corrupti reiciendis
+          eos sequi eligendi excepturi dicta sunt fugit exercitationem totam quo
+          velit expedita dolore, minus iste suscipit accusantium neque
+          necessitatibus culpa corporis fugiat laudantium. Magni consequatur
+          asperiores consectetur expedita rerum assumenda doloribus? Placeat
+          deleniti nam harum dolor, quam delectus in vel dolorum? Atque
+          possimus, voluptates praesentium aut, nesciunt corrupti eaque placeat
+          cupiditate expedita magnam, neque ipsa vero voluptatem quia dolore
+          sapiente aliquam.
+        </p>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Title 3</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error beatae
+          minima porro corporis nobis quasi delectus rerum, modi deserunt vel
+          magnam ducimus fuga debitis sit? A quaerat vero asperiores magni
+          aliquid, fugit amet maxime deserunt! Nam iusto, corrupti reiciendis
+          eos sequi eligendi excepturi dicta sunt fugit exercitationem totam quo
+          velit expedita dolore, minus iste suscipit accusantium neque
+          necessitatibus culpa corporis fugiat laudantium. Magni consequatur
+          asperiores consectetur expedita rerum assumenda doloribus? Placeat
+          deleniti nam harum dolor, quam delectus in vel dolorum? Atque
+          possimus, voluptates praesentium aut, nesciunt corrupti eaque placeat
+          cupiditate expedita magnam, neque ipsa vero voluptatem quia dolore
+          sapiente aliquam.
+        </p>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Title 4</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error beatae
+          minima porro corporis nobis quasi delectus rerum, modi deserunt vel
+          magnam ducimus fuga debitis sit? A quaerat vero asperiores magni
+          aliquid, fugit amet maxime deserunt! Nam iusto, corrupti reiciendis
+          eos sequi eligendi excepturi dicta sunt fugit exercitationem totam quo
+          velit expedita dolore, minus iste suscipit accusantium neque
+          necessitatibus culpa corporis fugiat laudantium. Magni consequatur
+          asperiores consectetur expedita rerum assumenda doloribus? Placeat
+          deleniti nam harum dolor, quam delectus in vel dolorum? Atque
+          possimus, voluptates praesentium aut, nesciunt corrupti eaque placeat
+          cupiditate expedita magnam, neque ipsa vero voluptatem quia dolore
+          sapiente aliquam.
+        </p>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Title 5</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error beatae
+          minima porro corporis nobis quasi delectus rerum, modi deserunt vel
+          magnam ducimus fuga debitis sit? A quaerat vero asperiores magni
+          aliquid, fugit amet maxime deserunt! Nam iusto, corrupti reiciendis
+          eos sequi eligendi excepturi dicta sunt fugit exercitationem totam quo
+          velit expedita dolore, minus iste suscipit accusantium neque
+          necessitatibus culpa corporis fugiat laudantium. Magni consequatur
+          asperiores consectetur expedita rerum assumenda doloribus? Placeat
+          deleniti nam harum dolor, quam delectus in vel dolorum? Atque
+          possimus, voluptates praesentium aut, nesciunt corrupti eaque placeat
+          cupiditate expedita magnam, neque ipsa vero voluptatem quia dolore
+          sapiente aliquam.
+        </p>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Title 6</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error beatae
+          minima porro corporis nobis quasi delectus rerum, modi deserunt vel
+          magnam ducimus fuga debitis sit? A quaerat vero asperiores magni
+          aliquid, fugit amet maxime deserunt! Nam iusto, corrupti reiciendis
+          eos sequi eligendi excepturi dicta sunt fugit exercitationem totam quo
+          velit expedita dolore, minus iste suscipit accusantium neque
+          necessitatibus culpa corporis fugiat laudantium. Magni consequatur
+          asperiores consectetur expedita rerum assumenda doloribus? Placeat
+          deleniti nam harum dolor, quam delectus in vel dolorum? Atque
+          possimus, voluptates praesentium aut, nesciunt corrupti eaque placeat
+          cupiditate expedita magnam, neque ipsa vero voluptatem quia dolore
+          sapiente aliquam.
+        </p>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Title 7</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error beatae
+          minima porro corporis nobis quasi delectus rerum, modi deserunt vel
+          magnam ducimus fuga debitis sit? A quaerat vero asperiores magni
+          aliquid, fugit amet maxime deserunt! Nam iusto, corrupti reiciendis
+          eos sequi eligendi excepturi dicta sunt fugit exercitationem totam quo
+          velit expedita dolore, minus iste suscipit accusantium neque
+          necessitatibus culpa corporis fugiat laudantium. Magni consequatur
+          asperiores consectetur expedita rerum assumenda doloribus? Placeat
+          deleniti nam harum dolor, quam delectus in vel dolorum? Atque
+          possimus, voluptates praesentium aut, nesciunt corrupti eaque placeat
+          cupiditate expedita magnam, neque ipsa vero voluptatem quia dolore
+          sapiente aliquam.
+        </p>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Title 8</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error beatae
+          minima porro corporis nobis quasi delectus rerum, modi deserunt vel
+          magnam ducimus fuga debitis sit? A quaerat vero asperiores magni
+          aliquid, fugit amet maxime deserunt! Nam iusto, corrupti reiciendis
+          eos sequi eligendi excepturi dicta sunt fugit exercitationem totam quo
+          velit expedita dolore, minus iste suscipit accusantium neque
+          necessitatibus culpa corporis fugiat laudantium. Magni consequatur
+          asperiores consectetur expedita rerum assumenda doloribus? Placeat
+          deleniti nam harum dolor, quam delectus in vel dolorum? Atque
+          possimus, voluptates praesentium aut, nesciunt corrupti eaque placeat
+          cupiditate expedita magnam, neque ipsa vero voluptatem quia dolore
+          sapiente aliquam.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

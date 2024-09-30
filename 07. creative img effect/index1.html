@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+    .container {
+      width: 30rem;
+      height: 30rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .container img {
+      width: 100%;
+      transition: all 1s;
+    }
+    .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+      transition: all 1s;
+      background-color: rgb(23, 23, 23);
+      transform: translateX(-100%);
+    }
+    .container:hover .content {
+      transform: translateX(0);
+    }
+  </style>
+  <body>
+    <section class="container">
+      <img src="img1.jpg" alt="" />
+
+      <article class="content">
+        <h1>Welcome To The Real world</h1>
+        <h4>Write Your Content Here</h4>
+      </article>
+    </section>
+    <!-- <section>
+      <img src="rayul-_M6gy9oHgII-unsplash.jpg" alt="" />
+      <article class="content">
+        <h1>Welcome to the Real world</h1>
+        <h4>Write your content here</h4>
+      </article>
+    </section> -->
+  </body>
+</html>

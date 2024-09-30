@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        color: white;
+      }
+      .container {
+        height: 18vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(16, 16, 16);
+        margin-bottom: 15px;
+        border-top: 3px solid red;
+        border-bottom: 3px solid red;
+      }
+      .container a {
+        text-decoration: none;
+        font-size: 32px;
+        font-weight: 500;
+      }
+
+      .btn-1 {
+        color: antiquewhite;
+        border: 2px solid antiquewhite;
+        padding: 2rem 5rem;
+        position: relative;
+
+        overflow: hidden;
+        /* transition: all 0.1s; */
+      }
+      .btn-1::before {
+        content: "Download";
+        font-size: 32px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #000;
+        background: antiquewhite;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        /* border: 2px solid rgb(16, 16, 16); */
+        transform: translateY(100%);
+        transition: all 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a:hover::before {
+        transform: translateY(0);
+      }
+
+      /* container2 */
+      .container2 {
+        color: #fff;
+        background-color: #fff;
+      }
+      .btn-2 {
+        background-color: blueviolet;
+        position: relative;
+        padding: 2rem 3rem;
+        text-transform: uppercase;
+      }
+      .btn-2::before {
+        content: "BUTTON";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: crimson;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* animation */
+        transform: rotateX(270deg);
+        transform-origin: top;
+        transition: all 0.5s;
+      }
+      .btn-2::after {
+        content: "button";
+        text-transform: lowercase;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: violet;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* animation */
+        transform: rotateX(270deg);
+        transform-origin: top;
+        transition: all 0.5s;
+        transition-delay: 0.25s;
+      }
+
+      .btn-2:hover::before,
+      .btn-2:hover::after {
+        transform: rotateX(0);
+      }
+
+      /* container3 */
+      .container3 {
+        background: #fff;
+        z-index: -1000;
+      }
+      .btn-3 {
+        position: relative;
+        padding: 2rem 3rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+
+        position: relative;
+        transition: all 0.2s;
+        color: #fff;
+        z-index: 0;
+        font-weight: bolder;
+      }
+      .btn-3::before {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        width: 100%;
+        height: 100%;
+        background-color: #06c988a4;
+        z-index: -1;
+        mix-blend-mode: multiply;
+        transform-origin: top;
+        transition: all 0.2s;
+      }
+      .btn-3::after {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 100%;
+        height: 100%;
+        background-color: #ffff00a6;
+        z-index: -1;
+        mix-blend-mode: multiply;
+        transform-origin: bottom;
+        transition: all 0.2s;
+      }
+      .btn-3:hover:before {
+        top: -6px;
+        left: 0;
+        transform: perspective(1000px) rotateX(75deg);
+      }
+      .btn-3:hover::after {
+        top: 6px;
+        left: 0;
+        transform: perspective(1000px) rotateX(-75deg);
+      }
+      .btn-3:hover {
+        color: black;
+      }
+
+      /* container4 */
+      .container4 {
+        background-color: crimson;
+      }
+      .btn-4 {
+        border: none;
+        padding: 1rem 4rem;
+        background-color: rgba(17, 17, 137, 0.824);
+
+        font-size: 22px;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+      }
+      .btn-4::before {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: -10px;
+        left: -10px;
+        /* background-color: teal; */
+        border-top: 4px solid darkblue;
+        border-left: 4px solid darkblue;
+        transition: all 0.5s;
+      }
+      .btn-4::after {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        bottom: -10px;
+        right: -10px;
+        /* background-color: teal; */
+        border-bottom: 4px solid darkblue;
+        border-right: 4px solid darkblue;
+        transition: all 0.5s;
+      }
+      .btn-4:hover::after,
+      .btn-4:hover::before {
+        height: 100%;
+        width: 100%;
+      }
+
+      /* container5 */
+      .container5 {
+        background-color: rgba(220, 20, 60, 0.479);
+      }
+      .btn-5 {
+        position: absolute;
+        padding: 1rem 4rem;
+        background-color: #fff;
+        color: #000;
+        transition: all 0.2s;
+        border-radius: 100px;
+        z-index: 0;
+      }
+      .btn-5::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        border-radius: 100px;
+        transition: all 0.5s;
+        z-index: -1;
+      }
+      .btn-5:hover:before {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+      .btn-5:hover {
+        transform: translateX(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      .btn-5:active {
+        transform: translateY((-1px));
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container container1">
+      <a href="#" class="btn-1">Hover Me</a>
+    </section>
+    <section class="container container2">
+      <a href="#" class="btn-2">Hover Me</a>
+    </section>
+    <section class="container container3">
+      <a href="#" class="btn-3">Hover Me</a>
+    </section>
+    <section class="container container4">
+      <a href="#" class="btn-4">Hover Me</a>
+    </section>
+    <section class="container container5">
+      <a href="#" class="btn-5">Hover Me</a>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+      }
+      .container {
+        height: 30rem;
+        width: 30rem;
+        position: relative;
+        overflow: hidden;
+      }
+      .container img {
+        width: 100%;
+        transition: all 0.5s;
+      }
+      .content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 25%;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        transition: all 0.5s;
+        background-color: rgb(23, 23, 23);
+        transform: translateY(100%);
+      }
+
+      .container:hover .content {
+        transform: translateY(0%);
+      }
+      .container:hover img {
+        transform: translateY(-20%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <img src="img2.jpg" alt="" />
+      <article class="content">
+        <h1>Welcome To The Real world</h1>
+        <h4>Write Your Content Here</h4>
+      </article>
+    </section>
+  </body>
+</html>
