@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(#0093e9, #80d0c7);
+        font-family: sans-serif;
+      }
+      .container {
+        /* display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; */
+        position: relative;
+        padding: 7px;
+        font-size: 25px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      /* h1 {
+        color: white;
+        font-size: 4rem;
+      } */
+      .tooltip-content {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        white-space: nowrap;
+        border-radius: 7px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 1s ease;
+      }
+      .tooltip-content::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        border: 15px solid;
+        border-color: black rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+      }
+
+      .container:hover .tooltip-content {
+        top: -20%;
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span class="tooltip-content">Tooltip Text</span>
+      <h1>Hover me</h1>
+    </div>
+  </body>
+</html>

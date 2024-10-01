@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  color: white;
+  background-color: black;
+  font-family: sans-serif;
+}
+
+section {
+  margin: 3em;
+  padding: 50px;
+  border: 2px solid white;
+}
+h1 {
+  margin-bottom: 25px;
+}
+p {
+  line-height: 30px;
+}
+
+.scroll-indicator {
+  height: 10px;
+  background-color: white;
+  width: calc(100% - 6em);
+  top: 10px;
+  left: 3em;
+  border-radius: 3px;
+  position: fixed;
+}
+
+.progress {
+  height: 100%;
+  width: 0px;
+  border-radius: 3px;
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  transition: width 0.1s;
+}
